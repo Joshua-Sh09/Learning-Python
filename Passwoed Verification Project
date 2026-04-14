@@ -1,0 +1,17 @@
+#Password verification::
+secret_password = 'opensesame'
+password =""
+password_count = 0
+password_limit = 3
+while password_count < password_limit:
+    password = str(input("enter password: ")).lower()
+    password_count += 1
+    if password == secret_password:
+        print("Access Granted.")
+        break
+    else:
+        print("Wrong Password, Try again.")
+else:
+    print("Access Denied.")
+    print(" ")
+    print("You Have Been Locked Out.")
