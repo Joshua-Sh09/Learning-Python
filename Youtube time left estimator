@@ -1,0 +1,22 @@
+# to figure out time left in a youtube video
+print("TIME LEFT ESTIMATOR FOR YOUTUBE VIDEOS")
+total_hours = int(input("Total hours in the video: "))
+total_mins = int(input("Total mins in the video: "))
+#ask the user to report the time watched 
+
+watched_hours = int(input("Watched hours so far: "))
+watched_mins = int(input("Watched mins so far: "))
+#convert hours into mins
+
+total = (total_hours * 60) + total_mins
+watched = (watched_hours * 60) + watched_mins
+#perform subtraction
+
+remaining = total - watched
+#separate
+
+hours_left = remaining // 60 
+mins_left = remaining % 60
+
+# give output
+print(f"You have: {hours_left}hrs and {mins_left}mins Left.")
